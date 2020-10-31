@@ -18,7 +18,19 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-
+//Home Directory
 Route::get('/', function () {
     return view('constructions/doctorBusy');
+});
+
+
+//Registration Directory
+Route::get('/reg', function () {
+    return view('constructions/registration');
+});
+
+
+//Login Directory
+Route::get('/login', function () {
+    return view('constructions/login');
 });
