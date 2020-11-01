@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,11 @@ Route::get('/reg', function () {
 
 
 //Login Directory
-Route::get('/login', function () {
-    return view('constructions/login');
-});
+// Route::get('/login', function () {
+//     return view('constructions/login');
+// });
+
+//Route::get('/login', 'AuthController@showLoginForm');
+// Route::get("login",[AuthController::class,'showLoginForm']);
+
+Route::get("login",[AuthController::class,'showLoginForm']);
