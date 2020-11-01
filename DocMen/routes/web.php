@@ -39,4 +39,6 @@ Route::get('/reg', function () {
 //Route::get('/login', 'AuthController@showLoginForm');
 // Route::get("login",[AuthController::class,'showLoginForm']);
 
+
+//new connection with controller. It get's new syntax now.
 Route::get("login",[AuthController::class,'showLoginForm']);
