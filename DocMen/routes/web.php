@@ -26,9 +26,9 @@ Route::get('/', function () {
 
 
 //Registration Directory
-Route::get('/reg', function () {
-    return view('constructions/registration');
-});
+// Route::get('/reg', function () {
+//     return view('constructions/registration');
+// });
 
 
 //Login Directory
@@ -39,6 +39,10 @@ Route::get('/reg', function () {
 //Route::get('/login', 'AuthController@showLoginForm');
 // Route::get("login",[AuthController::class,'showLoginForm']);
 
+//new connection with controller. It get's new syntax now.
+Route::get("reg",[AuthController::class,'showRegistrationForm'])->name('registration');
+Route::post("reg",[AuthController::class,'showRegistrationForm']);
 
 //new connection with controller. It get's new syntax now.
-Route::get("login",[AuthController::class,'showLoginForm']);
+Route::get("login",[AuthController::class,'showLoginForm'])->name('login');
+Route::post("login",[AuthController::class,'showLoginForm']);

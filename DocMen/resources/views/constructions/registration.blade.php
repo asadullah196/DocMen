@@ -22,7 +22,8 @@
 						<div class="reg-parents">
 							<div class="reg-form">
 								<h5>Register yourself with nessery information!</h5>
-								<form action="#">
+								<form action="{{ route('login')}}" action="post">
+									@csrf
 									<label for="fname">First Name : &nbsp;</label>
 									<input type="text" id="fname" class="reg-form-input" name="fname" value="" placeholder="Your First Name" required>
 									<br>
