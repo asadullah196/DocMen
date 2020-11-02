@@ -41,7 +41,7 @@ Route::get('/', function () {
 
 //new connection with controller. It get's new syntax now.
 Route::get("reg",[AuthController::class,'showRegistrationForm'])->name('registration');
-Route::post("reg",[AuthController::class,'showRegistrationForm']);
+Route::post("reg",[AuthController::class,'processRegistrationForm']);
 
 //new connection with controller. It get's new syntax now.
 Route::get("login",[AuthController::class,'showLoginForm'])->name('login');
