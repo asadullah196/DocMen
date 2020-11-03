@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AuthController extends Controller
+class User extends Controller
 {
     public function showRegistrationForm(){
         return view('constructions.registration');
@@ -36,10 +36,5 @@ class AuthController extends Controller
             return redirect()->back();
         }
         
-    }
-
-    public function showLoginForm()
-    {
-        return view('constructions/login');
     }
 }
