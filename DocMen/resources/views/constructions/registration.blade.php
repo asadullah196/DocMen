@@ -34,7 +34,7 @@
 									</div>
 								@endif
 
-								<form action="{{ route('registration')}}" action="post">
+								<form action="{{ route('registration')}}" method="post">
 									@csrf
 									<label for="fname">First Name : &nbsp;</label>
 									<input type="text" id="fname" class="reg-form-input" name="fname" value="" placeholder="Your First Name" required>
