@@ -1,4 +1,4 @@
 # DocMen
-DocMen is web application for doctor! With this application, doctor can do their online medical service directly to there patient. 
+DocMen is web application for doctor's chamber managment system!. It's a one stop solutions for taking appointemnt, video interview, sending porasciptions and manage communications.
 
-Test Brach Creating
+A patent can book appointment, submit histry, submit report, chat with doctor and support agent.
